@@ -1,2 +1,2 @@
-# spiffily.gihub.io
+# Spiffily
 Spiffily software organization website.
