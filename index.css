@@ -1,13 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Dancing+Script:wght@500&family=Inconsolata:wght@500&family=Lobster+Two:ital@1&family=Quicksand:wght@500&display=swap');
 
+/* font-family: 'Chilanka', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Inconsolata', monospace;
+font-family: 'Lobster Two', cursive;
+font-family: 'Quicksand', sans-serif; */
+
+:root{
+  --primary-color: #4C6E4B; /* var(--primary-color);*/
+  --background-color: grey; /* var(--background-color); */
+  --border-color: #3D583C; /* var(--border-color); */
+}
 
 body{
-  background-color: grey;
+  background-color: var(--background-color);
+  margin:0;
+  /* height: 100%; */
+}
+h1{
+  margin:0;
+  text-align: center;
+  font-family: 'Lobster Two', cursive;
+  color: lightgrey;
+}
+p{
+  font-family: 'Quicksand', sans-serif;
+}
+a{
+  font-family: 'Quicksand', sans-serif;
+  color: lightgrey;
+  text-decoration: none;
+  transition:text-shadow 0.75s linear 0s;
+  /* transition:color 0.75s linear 0s; */
+}
+a:hover{
+  font-family: 'Chilanka', cursive;
+  color: white;
+  text-shadow: 2px 2px var(--border-color);
+  transition:color 0.75s linear 0s;
 }
 .banner{
-  background-attachment:fixed;
-  /* background-position: center; /* Center the image */ */
-  min-height: 500px;
-  background-repeat: no-repeat; /* Do not repeat the image */
-  /* background-size: cover; /* Resize the background image to cover the entire container */ */
 
+  background-color: var(--primary-color);;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+}
+.row{
+  padding: 2%;
+}
+.toolbar{
+  position: sticky;
+  top:7px;
+
+  margin: 7px;
+  height: 45px;
+  background-color: var(--primary-color);
+  border-color: var(--border-color);
+  border-width: 5px;
+  border-radius: 50px;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.toolbar > * {
+  padding:0 5px;
+  margin:0 5px;
+}
+.toolbar > a > p{
+  color: lightgrey;
+  font-family:'Chilanka', cursive;
+  font-size: 20px;
 }
