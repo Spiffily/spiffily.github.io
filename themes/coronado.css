@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Dancing+Script:wght@500&family=Inconsolata:wght@600&family=Quicksand:wght@500&family=Special+Elite&display=swap');
+
+:root{ /*NOTE: Make all theme changes here.*/
+  --background-color: #460101;
+  --base-color: #5D1609;
+  --foreground-color: white;
+  --button-color: #9f9202;
+  --accent-color: #9f9202;
+
+  --background-image: ;
+  --background-image-attachment: ;
+  --base-background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+  --base-background-image-attachment: fixed;
+  --box-shadow: 0px 0px 4px 2px #332f2f88;
+
+  --border-radius: 14px;
+  --border-width: 1px;
+  --border-color: #282828;
+  --hover-color: #DCCA0488; /*Base color, but slightly lighter*/
+  --focus-border-color: #3E3E3E; /*Border color, but a little lighter*/
+  --active-color: #5B190BCC; /*Background color, but darker*/
+
+  /* Google Fonts imported:
+      font-family: 'Chilanka', cursive;
+      font-family: 'Dancing Script', cursive;
+      font-family: 'Inconsolata', monospace;
+      font-family: 'Quicksand', sans-serif;
+      font-family: 'Special Elite', cursive;*/
+  --font-family-header: 'Special Elite', cursive;
+  --font-family-body: 'Quicksand', sans-serif;
+  --font-family-code: 'Inconsolata', monospace;
+}
+button{
+  background-color: var(--accent-color);
+}
+::selection{
+  text-shadow: 2px 2px var(--base-color);
+}
+b{
+  font-family: 'Chilanka', cursive;
+}
+i{
+  font-family: 'Dancing Script', cursive;
+}

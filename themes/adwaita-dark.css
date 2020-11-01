@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans&family=Ubuntu:wght@300&display=swap");
+
+:root{ /*NOTE: Make all theme changes here.*/
+  --background-color: #2D2D2D;
+  --base-color: #353535;
+  --foreground-color: white;
+  --accent-color: #1B6ACB;
+
+  --border-radius: 7px;
+  --border-width: 2px;
+  --border-color: #282828;
+  --hover-color: #3B3B3B; /*Base color, but slightly lighter*/
+  --focus-border-color: #3E3E3E; /*Border color, but a little lighter*/
+  --active-color: #1A1617; /*Background color, but darker*/
+
+  /* Google Fonts imported:
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif; */
+  --font-family-header: 'Ubuntu', sans-serif;
+  --font-family-body: 'Open Sans', sans-serif;
+  --font-family-code: 'Inconsolata', monospace;
+}

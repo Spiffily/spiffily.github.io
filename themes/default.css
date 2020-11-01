@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat&family=Ubuntu:wght@300&display=swap');
+@media (prefers-color-scheme: light) {
+:root{ /*NOTE: Make all light theme changes here.*/
+  --background-color: #ffffff;
+  --base-color: #77777777;
+  --toolbar-color: #666666DD;
+  --toolbar-font-color: white;
+  --foreground-color: black;
+  --button-color: #b3d9b6;
+  --accent-color: #b3d9b6;
+
+  --background-image: url(./assets/notebook-dark.png);
+  --background-image-attachment: fixed;
+  --base-background-image: ;
+  --base-background-image-attachment: fixed;
+  --box-shadow: 0px 0px 4px 2px #332f2f88;
+
+  --border-radius: 40px;
+  --border-width: 1px;
+  --border-color: #282828;
+  --hover-color: #DCCA0488; /*Base color, but slightly lighter*/
+  --focus-border-color: #3E3E3E; /*Border color, but a little lighter*/
+  --active-color: #5B190BCC; /*Background color, but darker*/
+
+  /* Google Fonts imported:
+    font-family: 'Courier Prime', monospace;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;*/
+  --font-family-header: 'Ubuntu', sans-serif;
+  --font-family-body: 'agave', sans-serif;
+  --font-family-code: 'Courier Prime', monospace;
+}
+::selection{
+  text-shadow: 2px 2px var(--base-color);
+}
+}
+@media (prefers-color-scheme: dark) {
+  :root{ /*NOTE: Make all dark theme changes here.*/
+    --background-color: #404040cc;
+    --base-color: #77777777;
+    --toolbar-color: #777777BB;
+    --foreground-color: white;
+    --button-color: #567859;
+    --accent-color: #567859;
+
+    --background-image: url(./assets/black-paper.png);
+    --background-image-attachment: fixed;
+    --base-background-image: ;
+    --base-background-image-attachment: ;
+    --toolbar-background-image: ;
+    --toolbar-background-image-attachment: fixed;
+    --box-shadow: 0px 0px 4px 2px #332f2f88;
+
+    --border-radius: 14px;
+    --border-width: 1px;
+    --border-color: #282828;
+    --hover-color: #DCCA0488; /*Base color, but slightly lighter*/
+    --focus-border-color: #3E3E3E; /*Border color, but a little lighter*/
+    --active-color: #5B190BCC; /*Background color, but darker*/
+
+    /* Google Fonts imported:
+      font-family: 'Courier Prime', monospace;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Ubuntu', sans-serif;*/
+    --font-family-header: 'Montserrat', sans-serif;
+    --font-family-body: 'agave', sans-serif;
+    --font-family-code: 'Courier Prime', monospace;
+
+    --toolbar-font-color: var(--foreground-color);
+  }
+  ::selection{
+    text-decoration: underline;
+  }
+}
